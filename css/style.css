@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+body {
+    font-family: Pretendard, sans-serif;
+    color: #333;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+.hd_wrap {
+    max-width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gnb ul {
+    display: flex;
+    gap: 40px;
+}
+
+.gnb a {
+    color: #fff;
+}
+
+/* main visual */
+.main_visual .itm {
+    height: 100vh;
+    position: relative;
+}
+
+.main_visual .itm01 {
+    background: url(../image/1000553926353_i1_370.avif) center/cover;
+}
+
+.main_visual .itm02 {
+    background: url(../image/60699291_FRG_MAIN1X1.jfif) center/cover;
+}
+
+.main_visual .itm03 {
+    background: url(../image/images.jfif) center/cover;
+}
+
+.main_visual .itm::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .4);
+}
+
+.slg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.slg strong {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.slg p {
+    margin-top: 16px;
+}
+
+.product_thumb {
+    padding: 120px 0;
+    background: #f8f8f8;
+}
+
+.product_thumb .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.thumb_list {
+    display: flex;
+    gap: 40px;
+}
+
+.thumb_list li {
+    flex: 1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.thumb_list img {
+    width: 100%;
+    transition: .4s;
+}
+
+.thumb_list li:hover img {
+    transform: scale(1.1);
+}
+
+.thumb_list strong {
+    display: block;
+    margin-top: 16px;
+    font-size: 18px;
+}
+
+.thumb_list p {
+    margin-top: 8px;
+    color: #777;
+}
