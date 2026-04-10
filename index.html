@@ -83,20 +83,7 @@
     </section>
 
     <script>
-        const mainVisual = new Swiper('.main_visual_slide', {
-            loop: true,
-            pagination: {
-                el: '.page',
-                clickable: true,
-            },
-        });
 
-        document.querySelectorAll('.thumb_list li').forEach(item => {
-            item.addEventListener('click', () => {
-                mainVisual.slideToLoop(item.dataset.slide);
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            });
-        });
     </script>
 
 </body>
